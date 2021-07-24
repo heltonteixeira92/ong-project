@@ -3,6 +3,7 @@ python:
   - 3.9
 
 install:
+  - pip install -q -r requirements.txt
   - cp contrib/env-sample .env
 
 script:
