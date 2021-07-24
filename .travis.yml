@@ -1,0 +1,9 @@
+language: python
+python:
+  - 3.9
+
+install:
+  - cp contrib/env-sample .env
+
+script:
+  - flake8
