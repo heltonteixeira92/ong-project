@@ -1,0 +1,103 @@
+{% load static %}
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %} Casa de Simeão {% endblock %}</title>
+    <meta name="description" content="Casa de Simeão, Ong, Idosos">
+    <meta name="author" content="Time 12!">
+
+    <link href="{% static 'base/css/style.css' %}" rel="stylesheet">
+    <script src="{% static 'base/js/jquery.min.js' %}"></script>
+    <script src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'base/js/scripts.js' %}"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+
+      <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg navbar-dark shadow-sm bg-dark p-3 mb-5">
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="navbar-toggler-icon"></span>
+              </button> <a class="navbar-brand" href="#">Casa de Simeão</a>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                     <a class="nav-link" href="#">Atividades <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="#">Seja voluntário</a>
+                  </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Empresas parceiras</a>
+                  </li>
+                </ul>
+                  <button class="btn btn-primary my-2 my-sm-0 ml-auto" type="submit">
+                    Doe agora
+                  </button>
+              </div>
+          </nav>
+        </div>
+    </div>
+
+  {% block content %}
+  {% endblock %}
+
+<!-- FOOTER (rodapé)-->
+					<footer class="main-footer mt-4 pt-2 text-dark">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<h4>Casa de Simeão</h4>
+                                    <h5>Entre em contato:</h5>
+									<address>
+										<p>Telefone: <a href="tel:+551132282064" class="text-light">(11) 3228-2064</a></p>
+                                        <p>Telefone: <a href="tel:+551132282064" class="text-light">(11) 3311-7864</a></p>
+
+                                        Rua Assunção nº 480 Brás
+									</address>
+								</div>
+                                <div class="col">
+                                    <h5>Redes socias</h5>
+                                </div>
+                                <div class="col">
+                                    <h5>Home</h5>
+                                    <p>Quem somos</p>
+                                </div>
+                                <div class="row">
+                                <div class="col">
+                                    <h5>Empresas parceiras</h5>
+                                    <p>Selo de parceria</p>
+                                </div>
+                                </div>
+                                <div class="row pt-5">
+                                <div class="col pl-5">
+                                   <button class="btn btn-primary my-2 my-sm-0 ml-auto" type="submit">
+                                    Doe agora
+                                   </button>
+                                </div>
+                                </div>
+							</div>
+						</div>
+						<div class="rights pb-2">
+							<div class="container">
+								<div class="row">
+									<div class="col">
+										&copy; {% now 'Y' %} Casa de Simeão &middot; Todos os direitos reservados &middot;
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+</body>
+</html>

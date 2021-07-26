@@ -1,0 +1,21 @@
+.main-footer{
+    background-color: #808080;
+}
+
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+.titulo{
+     padding-bottom: 20px;
+     padding-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
