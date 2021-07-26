@@ -1,5 +1,22 @@
 .main-footer{
-    background-color: #808080;
+    background-color: #032872;
+    color: white;
+}
+
+.botao{
+    background-color: #CC0000;
+    color: white;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.nav-style{
+    background-color: #032872;
+    color: white;
+}
+.rights{
+    background-color: #1B2E56;
+    color: white;
 }
 
 * {
