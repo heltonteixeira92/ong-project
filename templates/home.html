@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block content %}
+<main role="main">
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
@@ -63,30 +64,35 @@
 				<div class="container">
 				<div class="row">
 					<div class="col">
+						<img src="{% static 'base/img/user.png' %}" alt="icone de pessoas"  />
 						<h5>Oficinas</h5>
 						<p class="lead">
 							Promover a criatividade e participação dos usuários em diversas atividades como culinária e informática.
 						</p>
 					</div>
 					<div class="col">
+						<img src="{% static 'base/img/educator.png' %}" alt="icone de palestra"  />
 						<h5>Palestras</h5>
 						<p class="lead">
 							Informações sobre diversos temos, tendo como objetivo trazer novos conhecimentos, orientações, direitos e socialização.
 						</p>
 					</div>
 					<div class="col">
+						<img src="{% static 'base/img/house.png' %}" alt="icone de uma casa"  />
 						<h5>Moradia autônoma</h5>
 						<p class="lead">
 							Atividade de reflexão, orientação e preparação para moradia autônoma.
 						</p>
 					</div>
 					<div class="col">
+						<img src="{% static 'base/img/music.png' %}" alt="icone de nota musical"  />
 						<h5>Roda de música</h5>
 						<p class="lead">
 							Promover descontração, integração e criatividade.
 						</p>
 					</div>
 					<div class="col">
+						<img src="{% static 'base/img/park.png' %}" alt="icone de parque"  />
 						<h5>Lazer</h5>
 						<p class="lead">
 							Realização de passeios, visitas culturais e eventos visando a convivência coletiva.
@@ -121,15 +127,12 @@
 			<div class="row">
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-					<h4>Empresa 1</h4>
+				</div>
+				<div class="col-md-4">
+					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />>
 				</div>
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-					<h4>Empresa 2</h4>
-				</div>
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-					<h4>Empresa 3</h4>
 				</div>
 			</div>
 			</section>
@@ -140,17 +143,20 @@
 			<div class="row">
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
+					<h4>Empresa 1</h4>
 				</div>
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
+					<h4>Empresa 1</h4>
 				</div>
 				<div class="col-md-4">
 					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
+					<h4>Empresa 1</h4>
 				</div>
 			</div>
 			</section>
 			<!-- Fim empresa com selo -->
 
-
+</main>
 
 {% endblock %}
