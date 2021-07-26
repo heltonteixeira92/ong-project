@@ -9,7 +9,9 @@
     border-radius: 20px;
     padding: 8px;
 }
-
+.section-blue{
+    background-color: #032872;
+}
 .nav-style{
     background-color: #032872;
     color: white;
@@ -30,4 +32,15 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.card-one{
+    background-color: #BB0202;
+}
+
+.card-two{
+    background-color: #9C0000;
+}
+.card-three{
+    background-color: #770000;
 }
