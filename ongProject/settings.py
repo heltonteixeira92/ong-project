@@ -140,6 +140,10 @@ SESSION_SAVE_EVERY_REQUEST = False
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+COLLECTFAST_STRATEGY = "collectfast.strategies.boto3.Boto3Strategy"
+COLLECTFAST_ENABLED = False
+
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 
 # STORAGE CONFIGURATION IN S3 AWS
@@ -148,27 +152,27 @@ if AWS_ACCESS_KEY_ID:
     AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
     AWS_STORAGE_BUCKET_NAME = config('AWS_STORAGE_BUCKET_NAME')
     AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400', }  # controle de tempo de cache do s3
-AWS_PRELOAD_METADATA = True
-AWS_AUTO_CREATE_BUCKET = False
-AWS_QUERYSTRING_AUTH = True  # para poder gerar urls assinadas
-AWS_S3_CUSTOM_DOMAIN = None
-AWS_DEFAULT_ACL = 'private'  # para nossos arquivos do S3 não fiquem publicos
+    AWS_PRELOAD_METADATA = True
+    AWS_AUTO_CREATE_BUCKET = False
+    AWS_QUERYSTRING_AUTH = True  # para poder gerar urls assinadas
+    AWS_S3_CUSTOM_DOMAIN = None
+    AWS_DEFAULT_ACL = 'private'  # para nossos arquivos do S3 não fiquem publicos
 
-COLLECTFAST_ENABLED = True
-# Static Assents / configuração dos arquivos staticos
-# ------------------------------------------------------------------
-STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
-STATIC_S3_PATH = 'static'
-STATIC_ROOT = f'/{STATIC_S3_PATH}/'
-STATIC_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/'
-ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+    COLLECTFAST_ENABLED = True
+    # Static Assents / configuração dos arquivos staticos
+    # ------------------------------------------------------------------
+    STATICFILES_STORAGE = 's3_folder_storage.s3.StaticStorage'
+    STATIC_S3_PATH = 'static'
+    STATIC_ROOT = f'/{STATIC_S3_PATH}/'
+    STATIC_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{STATIC_S3_PATH}/'
+    ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
 
-# Upload media Folder / configuração dos uploads
-# ------------------------------------------------------------------
-DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.StaticStorage'
-DEFAULT_S3_PATH = 'media'
-MEDIA_ROOT = f'/{DEFAULT_S3_PATH}/'
-MEDIA_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
+    # Upload media Folder / configuração dos uploads
+    # ------------------------------------------------------------------
+    DEFAULT_FILE_STORAGE = 's3_folder_storage.s3.StaticStorage'
+    DEFAULT_S3_PATH = 'media'
+    MEDIA_ROOT = f'/{DEFAULT_S3_PATH}/'
+    MEDIA_URL = f'//s3.amazonaws.com/{AWS_STORAGE_BUCKET_NAME}/{DEFAULT_S3_PATH}/'
 
-INSTALLED_APPS.append('s3_folder_storage')
-INSTALLED_APPS.append('storages')
+    INSTALLED_APPS.append('s3_folder_storage')
+    INSTALLED_APPS.append('storages')
