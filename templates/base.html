@@ -29,7 +29,9 @@
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <img class="navbar-brand rounded" height="48" width="78" src="{% static 'base/img/logo_casa_de_simeao.png' %}">
+              <a href="{% url 'base:home' %}">
+                <img class="navbar-brand logo"  src="{% static 'base/img/logo_casa_de_simeao.png' %}">
+              </a>
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -95,8 +97,8 @@
                                         <img src="{% static 'base/img/logoreciclazaroBranco.png' %}" height="75" width="150" alt="Logo reciclazaro"  />
 									</div>
                                     <div class="col pt-4">
-                                        <h4>Somos uma Ong com diversos programas de assistência social, sendo a casa de simeão um deles.
-                                            Conheça nosso trabalho: https://www.facebook.com/Reciclazaro</h4>
+                                        <h5 class="text-center">Somos uma Ong com diversos programas de assistência social, sendo a casa de simeão um deles. <br>
+                                            Conheça nosso trabalho: https://www.facebook.com/Reciclazaro</h5>
                                     </div>
 								</div>
 							</div>

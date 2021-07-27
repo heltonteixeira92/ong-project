@@ -9,15 +9,12 @@
 			
 			<div class="carousel slide" id="carousel-820595">
 					<div class="carousel-item active">
-						<img class="d-block w-100 " alt="Carousel Bootstrap First" src="{% static 'base/img/foto_capa.jpg' %}" />
+						<img class="d-block w-100 foto-capa" alt="Carousel Bootstrap First" src="{% static 'base/img/foto_capa.jpg' %}" />
 						<div class="carousel-caption">
-							<h4>
-								Acreditamos em um envelhecimento saúdavel dos nossos idosos
+							<h4 class="font-capa">
+								Casa de acolhimento, construção de autonomia e desenvolvimento humano.
 							</h4>
-							<p>
-								A casa de simeão é um abrigo conveniado, composto por 150 idosos com mais de 60 anos.
-								Trabalhamos combatendo o isolamento, sobre a base da escuta e a negociação, alimentando o desejo de continuar a desenvolver o seu potencial humano e intelectual.
-							</p>
+
 						</div>
 					</div>
 		   </div>
@@ -98,19 +95,18 @@
 					<div class="row justify-content-center">
 						<div class="card" style="width: 18rem;">
 						  <div class="card-body card-one text-light">
-							<h5 class="card-title">icone</h5>
-							<p class="card-text">150 idosos com residencia</p>
+							<h5 class="card-title"><img src="{% static 'base/img/icon.png' %}" alt="icone pessoa"  /></h5>							<p class="card-text">150 idosos com residencia</p>
 						  </div>
 						</div>
 						<div class="card" style="width: 18rem;">
 						  <div class="card-body card-two text-light">
-							<h5 class="card-title">icone</h5>
+							<h5 class="card-title"><img src="{% static 'base/img/icon.png' %}" alt="icone de nota musical"  /></h5>
 							<p class="card-text">mais de 20 oficinas realizadas esse ano</p>
 						  </div>
 						</div>
 						<div class="card" style="width: 18rem;">
 						  <div class="card-body card-three text-light">
-							<h5 class="card-title">icone</h5>
+							<h5 class="card-title"><img src="{% static 'base/img/icon.png' %}" alt="icone pessoa"  /></h5>
 							<p class="card-text">mais de 20 oficinas realizadas esse ano</p>
 						  </div>
 						</div>
@@ -121,35 +117,43 @@
 			<br>
 			<!-- sessão depoimentos -->
 			<section class="text-center pb-5">
-			<h2 class="jumbotron-heading titulo pb-5">Depoimentos</h2>
-			<div class="row">
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
+				<div class="container">
+					<h2 class="jumbotron-heading titulo pb-5">Depoimentos</h2>
+					<div class="row">
+						<div class="col-md-4">
+							<img alt="Bootstrap Image Preview" src="{% static 'base/img/idoso1.png' %}" class="rounded-circle" />
+							<p>A casa de simeão é muito acolhedora,
+								aqui fiz uma nova família </p>
+						</div>
+						<div class="col-md-4">
+							<img alt="Bootstrap Image Preview" src="{% static 'base/img/idoso2.png' %}" class="rounded-circle" />
+							<p>Eu que nunca tinha cozinhado,
+								aprendi vários pratos!</p>
+						</div>
+						<div class="col-md-4">
+							<img alt="Bootstrap Image Preview" src="{% static 'base/img/idoso3.png' %}" class="rounded-circle" />
+							<p>A palestra sobre saúde mental
+								foi muito boa!</p>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />>
-				</div>
-				<div class="col-md-4">
-					<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-				</div>
-			</div>
 			</section>
 			<!-- Fim sessão depoimentos -->
 			<!-- sessão empresas com selo -->
 			<section class="jumbotron text-center ">
-				<h2 class="jumbotron-heading titulo pb-5">Empresa com nosso selo de apoiador oficial</h2>
+				<h2 class="jumbotron-heading titulo pb-5">Empresas com nosso selo de apoiador oficial</h2>
 				<div class="row">
 					<div class="col-md-4">
-						<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-						<h4>Empresa 1</h4>
+						<img alt="Bootstrap Image Preview" src="{% static 'base/img/empresa1.png' %}" class="rounded-circle" />
+						<h4>Casa fit</h4>
 					</div>
 					<div class="col-md-4">
-						<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-						<h4>Empresa 1</h4>
+						<img alt="Bootstrap Image Preview" src="{% static 'base/img/empresa2.png' %}" class="rounded-circle" />
+						<h4>Vieiras modas</h4>
 					</div>
 					<div class="col-md-4">
-						<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg" class="rounded-circle" />
-						<h4>Empresa 1</h4>
+						<img alt="Bootstrap Image Preview" src="{% static 'base/img/empresa3.png' %}" class="rounded-circle" />
+						<h4>CAtelier morais</h4>
 					</div>
 				</div>
 			</section>

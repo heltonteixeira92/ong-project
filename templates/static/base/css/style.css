@@ -8,10 +8,17 @@
     color: white;
     border-radius: 20px;
     padding: 8px;
+    transition: 0.2s;
 }
-.section-blue{
-    background-color: #032872;
+
+.botao:hover{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #770000;
 }
+
+
 .nav-style{
     background-color: #032872;
     color: white;
@@ -20,6 +27,24 @@
     background-color: #1B2E56;
     color: white;
 }
+
+.logo{
+    border-radius: 11px;
+    max-width:90px;
+    max-height:70px;
+    width: auto;
+    height: auto;
+}
+.foto-capa{
+    max-width:1350px;
+    max-height:400px;
+    width: auto;
+    height: auto;
+}
+.font-capa{
+        font-weight: 900;
+        font-size: 40px;
+        }
 
 * {
     margin: 0;
@@ -32,6 +57,10 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+.section-blue{
+    background-color: #032872;
 }
 
 .card-one{
